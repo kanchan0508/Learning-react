@@ -1,0 +1,21 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+.nav li{
+  margin-left: 20px;
+}
+.restaurant-list{
+    display: flex;
+}
+.restaurant{
+    border: 1px solid black;
+    margin: 8px;
+    padding: 3px
+}

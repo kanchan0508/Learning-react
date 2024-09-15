@@ -19,3 +19,11 @@
     margin: 8px;
     padding: 3px
 }
+.restaurant-list{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.restaurant{
+    width: 16%;
+}

@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import Shimmer from "./Shimmer";
+
 
 
 const Body = () => {
@@ -34,12 +36,8 @@ const Body = () => {
         // Try to find the actual restaurant data in the response
         const restaurantCards = data?.data?.cards?.find(card => card?.card?.card?.gridElements?.infoWithStyle?.restaurants)?.card?.card?.gridElements?.infoWithStyle?.restaurants;
 
-        if (restaurantCards) {
-            setFilteredRestaurants(restaurantCards);
+        setFilteredRestaurants(restaurantCards);
             setRestaurants(restaurantCards);
-        } else {
-            console.error("Restaurant cards not found");
-        }
     } catch (error) {
         console.error("Error fetching restaurants:", error);
     }
@@ -47,7 +45,7 @@ const Body = () => {
 
     console.log(restaurants);
 
-    return (
+    return  (
         <>
             <div>
                 <input 
@@ -81,11 +79,11 @@ const Body = () => {
                         </div>
                     ))
                 ) : (
-                    <p>No restaurants found</p>
+                    <Shimmer />
                 )}
             </div>
         </>
-    );
+    )
 };
 
 export default Body;

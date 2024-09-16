@@ -1,12 +1,20 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import useOnline from "./utils/useOnline";
 
 export const Title = () => {
-    return <h1 id="title" key="h1">Food Delivery</h1>;
+    return <Link to="/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimKS0-E61jy_dctanYVq2rzxMV35RExo-Aw&s" alt="" style={{
+      width: "100px",
+      height: "70px"
+    }} />
+    </Link>
   };
   
   const Header = () => {
     const [login,setLogin] = useState(true)
+
+     const isOnline = useOnline()
+     
     return (
       <div className="nav">
         <Title />
@@ -16,6 +24,7 @@ export const Title = () => {
           <li><Link to="/contact">Contact</Link></li>
           <li>Cart</li>
         </ul>
+        {isOnline ? "✅" : "❌"}
         {login ? <button onClick={()=>setLogin(false)}>Login</button> : <button onClick={()=> setLogin(true)}>logout</button>}
 
 

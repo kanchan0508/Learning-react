@@ -9,6 +9,7 @@ import About from "./Componenets/About";
 import Contact from "./Componenets/Contact";
 import Error from "./Componenets/Error";
 import RestaurantMenu from "./Componenets/RestaurantMenu";
+import Profile from "./Componenets/Profile";
 
 
    const AppLayout = () =>{
@@ -37,7 +38,11 @@ import RestaurantMenu from "./Componenets/RestaurantMenu";
             },
             {
                 path: "/about",
-                element: <About />
+                element: <About />,
+                children:[{
+                    path: "Profile",
+                    element: <Profile/>
+                }]
             },
             {
                 path: "/contact",

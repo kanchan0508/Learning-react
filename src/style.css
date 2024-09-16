@@ -25,7 +25,8 @@
     flex-wrap: wrap;
 }
 .restaurant{
-    width: 16%;
+    width: 300px;
+    height: 400px;
 }
 .restaurants{
     display: flex;

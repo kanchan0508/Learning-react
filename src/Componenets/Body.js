@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 
 
@@ -59,13 +60,14 @@ const Body = () => {
             <div className="restaurant-list">
                 {filteredRestaurants.length > 0 ? (
                     filteredRestaurants.map((rest) => (
+                        <Link to= {"/restaurant/" + rest.info.id }>
                         <div key={rest.info.id} className="restaurant">
                             {/* Construct the image URL using cloudinaryImageId */}
                             {rest.info.cloudinaryImageId ? (
                                 <img 
                                     src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${rest.info.cloudinaryImageId}`} 
                                     alt={rest.info.name} 
-                                    style={{ width:"220px", height: "150px", objectFit: "cover" }} 
+                                    style={{ width:"300px", height: "150px", objectFit: "cover" }} 
                                 />
                             ) : (
                                 <p>No image available</p>
@@ -77,6 +79,7 @@ const Body = () => {
                             <p>Discount: {rest.info.aggregatedDiscountInfoV3?.header || "No discount available"}</p>
                             <a href={rest.cta.link} target="_blank" rel="noopener noreferrer">View on Swiggy</a>
                         </div>
+                        </Link>
                     ))
                 ) : (
                     <Shimmer />

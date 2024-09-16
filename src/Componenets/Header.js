@@ -22,6 +22,7 @@ export const Title = () => {
           <li><Link to="/home">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/instamart">Instamart</Link></li>
           <li>Cart</li>
         </ul>
         {isOnline ? "✅" : "❌"}

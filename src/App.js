@@ -10,18 +10,21 @@ import Error from "./Componenets/Error";
 import RestaurantMenu from "./Componenets/RestaurantMenu";
 import Profile from "./Componenets/Profile";
 import Shimmer from "./Componenets/Shimmer";
+import { Provider } from "react-redux";
+import store from "./Componenets/utils/store";
+import Cart from "./Componenets/Cart";
 
  
- const Instamart = lazy(() => import("./Componenets/Instamart"))
+ const Instamart = lazy(() => import("./Componenets/Instamart")) // lazy loading
  const About = lazy(() => import("./Componenets/About"))
 
    const AppLayout = () =>{
     return(
-        <>
+        <Provider store={store}>
             <Header />
             <Outlet />
             <Footer />
-        </>
+        </Provider>
     )
    }
 
@@ -58,6 +61,10 @@ import Shimmer from "./Componenets/Shimmer";
             {
                 path: "/instamart",
                 element: <Suspense fallback={<Shimmer/>}><Instamart /></Suspense>
+            },
+            {
+                path: "/cart",
+                element: <Cart />
             },
         ]
     },

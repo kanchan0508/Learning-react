@@ -20,3 +20,4 @@ dist/
 # IDE specific files
 .vscode/
 .idea/
+/coverage

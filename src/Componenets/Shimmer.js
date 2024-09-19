@@ -2,7 +2,7 @@ import React from 'react'
 
 function Shimmer() {
   return (
-    <div className="restaurant-list">
+    <div className="restaurant-list" data-testid="shimmer">
       {Array(10).fill("").map((e, index) => {
         return (
           <div

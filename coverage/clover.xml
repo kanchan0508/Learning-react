@@ -1,54 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1726745043511" clover="3.2.0">
-  <project timestamp="1726745043511" name="All files">
-    <metrics statements="28" coveredstatements="22" conditionals="4" coveredconditionals="2" methods="14" coveredmethods="7" elements="46" coveredelements="31" complexity="0" loc="28" ncloc="28" packages="2" files="5" classes="5"/>
+<coverage generated="1726760355130" clover="3.2.0">
+  <project timestamp="1726760355131" name="All files">
+    <metrics statements="79" coveredstatements="61" conditionals="18" coveredconditionals="10" methods="33" coveredmethods="22" elements="130" coveredelements="93" complexity="0" loc="79" ncloc="79" packages="3" files="11" classes="11"/>
     <package name="Componenets">
-      <metrics statements="9" coveredstatements="8" conditionals="4" coveredconditionals="2" methods="6" coveredmethods="4"/>
+      <metrics statements="46" coveredstatements="42" conditionals="18" coveredconditionals="10" methods="22" coveredmethods="18"/>
+      <file name="Body.js" path="C:\Users\gobar\OneDrive\Desktop\Namste-react\src\Componenets\Body.js">
+        <metrics statements="24" coveredstatements="23" conditionals="14" coveredconditionals="8" methods="9" coveredmethods="9"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="8" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="13" count="7" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="20" type="stmt"/>
+        <line num="20" count="7" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="25" count="7" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="35" count="3" type="stmt"/>
+        <line num="38" count="3" type="stmt"/>
+        <line num="39" count="6" type="stmt"/>
+        <line num="42" count="3" type="stmt"/>
+        <line num="43" count="3" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="48" count="7" type="stmt"/>
+        <line num="50" count="7" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="65" count="60" type="stmt"/>
+      </file>
       <file name="Header.js" path="C:\Users\gobar\OneDrive\Desktop\Namste-react\src\Componenets\Header.js">
         <metrics statements="8" coveredstatements="7" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="3"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="19" count="6" type="stmt"/>
-        <line num="22" count="3" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="19" count="10" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
         <line num="34" count="0" type="cond" truecount="1" falsecount="1"/>
+      </file>
+      <file name="RestaurantMenu.js" path="C:\Users\gobar\OneDrive\Desktop\Namste-react\src\Componenets\RestaurantMenu.js">
+        <metrics statements="11" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="3"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+      </file>
+      <file name="Shimmer.js" path="C:\Users\gobar\OneDrive\Desktop\Namste-react\src\Componenets\Shimmer.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="7" count="40" type="stmt"/>
       </file>
       <file name="Sum.js" path="C:\Users\gobar\OneDrive\Desktop\Namste-react\src\Componenets\Sum.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
       </file>
     </package>
+    <package name="Componenets.mocks">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="data.js" path="C:\Users\gobar\OneDrive\Desktop\Namste-react\src\Componenets\mocks\data.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="Componenets.utils">
-      <metrics statements="19" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="3"/>
+      <metrics statements="32" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="4"/>
       <file name="cartSlice.js" path="C:\Users\gobar\OneDrive\Desktop\Namste-react\src\Componenets\utils\cartSlice.js">
-        <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
+        <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
       </file>
       <file name="store.js" path="C:\Users\gobar\OneDrive\Desktop\Namste-react\src\Componenets\utils\store.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
       </file>
       <file name="useOnline.js" path="C:\Users\gobar\OneDrive\Desktop\Namste-react\src\Componenets\utils\useOnline.js">
         <metrics statements="12" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="3"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
+      </file>
+      <file name="useRestaurant.js" path="C:\Users\gobar\OneDrive\Desktop\Namste-react\src\Componenets\utils\useRestaurant.js">
+        <metrics statements="11" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+      </file>
+      <file name="userContext.js" path="C:\Users\gobar\OneDrive\Desktop\Namste-react\src\Componenets\utils\userContext.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
       </file>
     </package>
   </project>

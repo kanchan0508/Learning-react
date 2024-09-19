@@ -10,7 +10,6 @@ const RestaurantMenu = () => {
   const param = useParams();
   const { id } = param;
 
-  const restaurant = useRestaurant(id)
   
   const dispatch = useDispatch()
   
@@ -22,10 +21,10 @@ const RestaurantMenu = () => {
   }
 
   return (
-    <div>
+    <div data-testid="menu">
       <h1>Menu</h1>
       <h2>{id}</h2>
-      <button onClick={()=> handleAddItem()} > Add to cart </button>
+      <button data-testid= "addBtn" onClick={()=> handleAddItem()} > Add to cart </button>
       <button onClick={()=> handleRemoveItem()} > Remove from cart </button>
     </div>
   );

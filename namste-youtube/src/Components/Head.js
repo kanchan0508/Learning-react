@@ -12,14 +12,14 @@ const Head = () => {
     const toggleMenuHandler = () =>{
         dispatch(toggleMenu())
     }
-    useEffect(()=>{
-      const timer = setTimeout( () => getSuggestions(), 200)
+    // useEffect(()=>{
+    //   const timer = setTimeout( () => getSuggestions(), 200)
 
-      return ()=>{
-        clearTimeout(timer)
-      }
+    //   return ()=>{
+    //     clearTimeout(timer)
+    //   }
 
-    },[suggestions])
+    // },[suggestions])
 
    const getSuggestions = async() =>{
     const data = await fetch(`https://suggestqueries.google.com/complete/search?client=youtube&ds=yt&q=${suggestions}`)
